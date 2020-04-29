@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Search from '../components/Search/Search';
+import UserDetails from '../components/UserDetails/UserDetails';
 import { fetchUser } from '../Services/githubAPI';
 
 export default class Main extends Component {
@@ -26,6 +27,7 @@ export default class Main extends Component {
       .then(console.log(this.state.user));
   }
   render() {
+   
     return (
       <>
         <Search 
@@ -33,6 +35,7 @@ export default class Main extends Component {
           onUserChange={ this.handleUserChange }
           onUserSubmit={ this.handleUserSubmit }
         />
+        <UserDetails { ...this.state.user } />;
       </>
     );
   }
