@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const Search = ({ userName, onUserChange, onUserSubmit }) => (
   <>
-    <h1>Github Viewer</h1>
     <input 
       type="text" 
       name="userName" 
