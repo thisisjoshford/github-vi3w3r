@@ -1,10 +1,10 @@
 import React from 'react';
-import Search from './Search';
+import Main from '../../containers/Main';
 
 export default function App() {
   return (
     <>
-      <h1>Github Viewer</h1>
-      <Search/>
-    </>);
+      <Main />
+    </>
+  );
 }

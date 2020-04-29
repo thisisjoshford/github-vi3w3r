@@ -1,23 +1,24 @@
-  
-import { React } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-const Search = ({ userName, onUserChange, onUserSubmit }) => {
-  <form onSubmit={onUserSubmit}>
+const Search = ({ userName, onUserChange, onUserSubmit }) => (
+  <>
+    <h1>Github Viewer</h1>
     <input 
       type="text" 
       name="userName" 
       value={userName} 
-      onChange={onUserChange} />
-    <button 
+      onChange={onUserChange} 
+    />
+    <input 
+      type="submit"
       name="search"
-      value="search"
+      value="Search"
       onClick={onUserSubmit}
-    >Search
-    </button>
-  </form>;
+    />
+  </>
  
-};
+);
 
 Search.propTypes = {
   userName: PropTypes.string.isRequired,

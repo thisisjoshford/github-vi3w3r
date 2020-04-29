@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Search from '../components/App/Search';
+import Search from '../components/Search/Search';
 
 export default class Main extends Component {
 
@@ -16,13 +16,13 @@ export default class Main extends Component {
   }
   render() {
     return (
-      <div>
+      <>
         <Search 
           userName={ this.state.username } 
           onUserChange={ this.handleUserChange }
-          onUserSubmit={ this.handleUserSubmit }
+          // onUserSubmit={ this.handleUserSubmit }
         />
-      </div>
+      </>
     );
   }
 }
