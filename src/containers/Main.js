@@ -16,13 +16,14 @@ export default class Main extends Component {
 
   handleUserChange = ({ target }) => {
     this.setState({ userName: target.value });
+    (console.log(this.state.userName));
   };
 
   handleUserSubmit = () => {
     //get a user and set the state as user
     fetchUser(this.state.userName)
-      .then(user => this.setState({ user }));
-  
+      .then(user => this.setState({ user }))
+      .then(console.log(this.state.user));
   }
   render() {
     return (
