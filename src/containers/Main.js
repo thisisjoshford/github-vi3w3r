@@ -5,7 +5,7 @@ import fetchUser from '../Services/githubAPI';
 export default class Main extends Component {
 
   state = {
-    username: '',
+    userName: '',
     user: {
       login: '',
       followers: 0,
@@ -15,7 +15,7 @@ export default class Main extends Component {
   }
 
   handleUserChange = ({ target }) => {
-    this.setState({ username: target.value });
+    this.setState({ userName: target.value });
   };
 
   handleUserSubmit = () => {
@@ -28,7 +28,7 @@ export default class Main extends Component {
     return (
       <>
         <Search 
-          userName={ this.state.username } 
+          userName={ this.state.userName } 
           onUserChange={ this.handleUserChange }
           onUserSubmit={ this.handleUserSubmit }
         />
