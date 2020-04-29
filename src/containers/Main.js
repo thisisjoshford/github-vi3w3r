@@ -20,7 +20,7 @@ export default class Main extends Component {
         <Search 
           userName={ this.state.username } 
           onUserChange={ this.handleUserChange }
-          // onUserSubmit={ this.handleUserSubmit }
+          onUserSubmit={ this.handleUserSubmit }
         />
       </>
     );
