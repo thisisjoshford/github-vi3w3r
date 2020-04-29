@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Search from '../components/Search/Search';
-import fetchUser from '../Services/githubAPI';
+import { fetchUser } from '../Services/githubAPI';
 
 export default class Main extends Component {
 
