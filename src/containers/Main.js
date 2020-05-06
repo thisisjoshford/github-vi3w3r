@@ -22,9 +22,9 @@ export default class Main extends Component {
   handleUserSubmit = () => {
     fetchUser(this.state.userName)
       .then(user => this.setState({ user }));
-      
+
     fetchRepos(this.state.userName)
-      .then(user => this.setState({ repos }));
+      .then(repos => this.setState({ repos }));
   }
   render() {
    
