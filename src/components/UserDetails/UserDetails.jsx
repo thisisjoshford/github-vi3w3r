@@ -1,14 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const UserDetails = ({ login, followers, following, html_url }) => (
-  <>
-    <h2>User: { login }</h2>
-    <li>Followers: { followers }</li>
-    <li>Following: { following }</li>
-    <a href={ html_url}>LINK</a>
-  </>
-);
+const UserDetails = ({ login, followers, following, html_url, repos }) => {
+  console.log(repos);
+  const repoItems = repos.map((repo) => (
+    <>
+      <li><a href={repo.html_url}>{repo.name}</a></li>
+    </>
+));
+
+  return (
+    <>
+      <h2>User: { login }</h2>
+      <li>Followers: { followers }</li>
+      <li>Following: { following }</li>
+      <a href={html_url}>LINK</a>
+      {repoItems}
+    </>
+  );
+};
 
 UserDetails.propTypes = {
   login: PropTypes.string.isRequired,

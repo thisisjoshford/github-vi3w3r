@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component renders Search 1`] = `
+<Fragment>
+  <input
+    name="userName"
+    onChange={[Function]}
+    type="text"
+    value="thisisjoshford"
+  />
+  <input
+    name="search"
+    onClick={[Function]}
+    type="submit"
+    value="Search"
+  />
+</Fragment>
+`;

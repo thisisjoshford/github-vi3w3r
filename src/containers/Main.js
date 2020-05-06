@@ -11,8 +11,8 @@ export default class Main extends Component {
       followers: 0,
       following: 0,
       html_url: '',
-      repos: []
     },
+    repos: []
   }
 
   handleUserChange = ({ target }) => {
@@ -36,7 +36,7 @@ export default class Main extends Component {
           onUserChange={ this.handleUserChange }
           onUserSubmit={ this.handleUserSubmit }
         />
-        <UserDetails { ...this.state.user } />;
+        <UserDetails { ...this.state.user } repos={this.state.repos} />;
       </>
     );
   }
