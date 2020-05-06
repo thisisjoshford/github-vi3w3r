@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Details renders user details 1`] = `
+<Fragment>
+  <h2>
+    User: 
+    thisisjoshford
+  </h2>
+  <li>
+    Followers: 
+    10
+  </li>
+  <li>
+    Following: 
+    10
+  </li>
+  <a
+    href="https://github.com/thisisjoshford"
+  >
+    LINK
+  </a>
+  <li
+    key="233724246"
+  >
+    <a>
+      about-me
+    </a>
+  </li>
+  <li
+    key="261284340"
+  >
+    <a>
+      artist-search
+    </a>
+  </li>
+</Fragment>
+`;
