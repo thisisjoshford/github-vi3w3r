@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const UserDetails = ({ login, followers, following, html_url, repos }) => {
-  console.log(repos);
   const repoItems = repos.map((repo) => (
     <li key={repo.id}><a href={repo.url}>{repo.name}</a></li>
 ));
