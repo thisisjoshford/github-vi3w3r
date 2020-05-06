@@ -5,5 +5,6 @@ export const fetchUser = (userName) => {
 
 export const fetchRepos = (userName) => {
   return fetch(`https://api.github.com/users/${userName}/repos`)
-    .then(res => res.json());
+    .then(res => res.json())
+    .then(json => console.log(json));
 };
